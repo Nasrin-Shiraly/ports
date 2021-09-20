@@ -10,12 +10,12 @@ import (
 )
 
 var cfgFile string
-const longDescription = `grab next available ips for docker compose files in directory -d.
-if -p is passed in, the next port for port that range is shown`
+const longDescription = `ports grab shows next available ports for docker compose files in --directory.
+if --port is passed in, the next port for port that range is shown`
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "ports",
-	Short: "grab -d DIRECTORY_PATH -p PORT",
+	Short: "ports grab --directory DIRECTORY_PATH --port PORT",
 	Long: longDescription,
 }
 
